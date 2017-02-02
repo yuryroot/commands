@@ -4,3 +4,13 @@
 ```bash
 tar -xjvf archive.tar.bz2 -C /target/directory
 ```
+## Init-scripts management (System-V)
+
+# Append Init-script to autostart
+```bash
+sudo update-rc.d <script> defaults
+```
+# Remove Init-script from autostart
+```bash
+sudo update-rc.d -f <script> remove
+```
