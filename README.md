@@ -14,3 +14,14 @@ sudo update-rc.d <script> defaults
 ```bash
 sudo update-rc.d -f <script> remove
 ```
+## Systemd-services management
+
+### Append Systemd-service to autostart
+```bash
+sudo systemctl enable <name>.service
+```
+
+### Remove Systemd-service from autostart
+```bash
+sudo systemctl disable <name>.service
+```
